@@ -75,6 +75,7 @@ const config: ExpoConfig = {
       },
     ],
     'expo-image',
+    ['./plugins/with-android-splits'],
   ],
   experiments: {
     typedRoutes: true,
