@@ -14,7 +14,7 @@ const config: ExpoConfig = {
     infoPlist: {
       CFBundleDisplayName: 'React Native Template',
       CFBundleAllowMixedLocalizations: true,
-      CFBundleLocalizations: ['en', 'ar'],
+      CFBundleLocalizations: ['en', 'vi'],
       ITSAppUsesNonExemptEncryption: false,
     },
     buildNumber: '1',
@@ -44,8 +44,8 @@ const config: ExpoConfig = {
       'expo-localization',
       {
         supportedLocales: {
-          ios: ['en', 'ar'],
-          android: ['en', 'ar'],
+          ios: ['en', 'vi'],
+          android: ['en', 'vi'],
         },
       },
     ],
