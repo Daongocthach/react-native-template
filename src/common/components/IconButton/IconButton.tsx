@@ -21,6 +21,7 @@ export function IconButton({
   size = 'md',
   disabled = false,
   loading = false,
+  color,
   onPress,
   accessibilityLabel,
 }: IconButtonProps) {
@@ -32,18 +33,18 @@ export function IconButton({
 
   const resolveColor = (theme: {
     colors: {
-      text: { inverse: string; primary: string };
+      text: { primary: string };
       brand: { primary: string };
       icon: { primary: string };
     };
   }) => {
     const colorMap = {
-      primary: theme.colors.text.inverse,
+      primary: theme.colors.text.primary,
       secondary: theme.colors.text.primary,
       outline: theme.colors.brand.primary,
       ghost: theme.colors.icon.primary,
     };
-    return colorMap[variant];
+    return color ?? colorMap[variant];
   };
 
   return (

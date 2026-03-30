@@ -60,6 +60,8 @@ export const styles = StyleSheet.create((theme) => ({
         inverse: { color: theme.colors.text.inverse },
         accent: { color: theme.colors.text.accent },
         link: { color: theme.colors.text.link },
+        linkHover: { color: theme.colors.text.linkHover },
+        onBrand: { color: theme.colors.text.onBrand },
       },
     },
   },

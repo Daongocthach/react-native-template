@@ -10,10 +10,15 @@ const AnimatedPressable = Animated.createAnimatedComponent(Pressable);
 
 function getSpinnerColor(
   variant: string,
-  theme: { colors: { text: { inverse: string; primary: string }; brand: { primary: string } } }
+  theme: {
+    colors: {
+      text: { primary: string };
+      brand: { primary: string };
+    };
+  }
 ) {
-  if (variant === 'primary') return theme.colors.text.inverse;
-  if (variant === 'secondary') return theme.colors.text.primary;
+  if (variant === 'primary') return theme.colors.text.primary;
+  if (variant === 'secondary' || variant === 'outline') return theme.colors.text.primary;
   return theme.colors.brand.primary;
 }
 
@@ -35,6 +40,7 @@ export function Button({
   fullWidth = false,
   leftIcon,
   rightIcon,
+  labelStyle,
   style,
   ...rest
 }: ButtonProps) {
@@ -67,7 +73,7 @@ export function Button({
       ) : (
         <>
           {leftIcon}
-          <Text style={styles.label}>{title}</Text>
+          <Text style={[styles.label, labelStyle]}>{title}</Text>
           {rightIcon}
         </>
       )}

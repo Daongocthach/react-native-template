@@ -18,6 +18,8 @@ export interface IconButtonProps {
   disabled?: boolean;
   /** Whether to show a loading indicator instead of the icon. Defaults to `false`. */
   loading?: boolean;
+  /** Optional icon color override. */
+  color?: string;
   /** Callback invoked when the button is pressed. */
   onPress?: () => void;
   /** Required accessibility label for screen readers. */

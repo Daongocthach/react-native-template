@@ -14,12 +14,33 @@
     "close": "Đóng",
     "edit": "Chỉnh sửa",
     "submit": "Gửi",
-    "ok": "OK"
+    "ok": "OK",
+    "syncStatus": {
+      "syncNow": "Đồng bộ ngay",
+      "loginToSync": "Đăng nhập để đồng bộ"
+    }
   },
   "tabs": {
     "home": "Trang chủ",
+    "stats": "Thống kê",
+    "add": "Thêm",
+    "favorites": "Yêu thích",
+    "profile": "Hồ sơ",
     "showcase": "Trưng bày",
     "settings": "Cài đặt"
+  },
+  "language": {
+    "label": "Ngôn ngữ",
+    "english": "Tiếng Anh",
+    "vietnamese": "Tiếng Việt"
+  },
+  "header": {
+    "back": "Quay lại",
+    "brandName": "FinePro",
+    "toggleTheme": "Đổi giao diện",
+    "themeSystem": "Theo hệ thống",
+    "themeLight": "Sáng",
+    "themeDark": "Tối"
   },
   "home": {
     "welcome": "Chào mừng",
@@ -65,6 +86,26 @@
       "item4Title": "Thanh toán đã xử lý",
       "item4Subtitle": "Hóa đơn #1042 đã thanh toán",
       "item4Time": "3 giờ trước"
+    }
+  },
+  "homeScreen": {
+    "greetingTitle": "Xin chào, {{name}}",
+    "greetings": {
+      "morning": "Chào buổi sáng",
+      "afternoon": "Chào buổi chiều",
+      "evening": "Chào buổi tối"
+    }
+  },
+  "welcomeScreen": {
+    "title": "Chào mừng"
+  },
+  "manualFoodEntry": {
+    "title": "Nhập món ăn"
+  },
+  "application": {
+    "applyTitle": "Nộp đơn",
+    "form": {
+      "successPageTitle": "Đã gửi đơn thành công"
     }
   },
   "settings": {
@@ -195,6 +236,20 @@
   "network": {
     "offline": "Có vẻ bạn đang ngoại tuyến",
     "online": "Đã trực tuyến lại"
+  },
+  "camera": {
+    "title": "Máy ảnh",
+    "barcodeTitle": "Quét mã vạch",
+    "barcodeHint": "Canh mã vạch vào trong khung.",
+    "permissionDenied": "Cần cấp quyền truy cập máy ảnh.",
+    "captureFailed": "Không thể chụp ảnh.",
+    "scanFailed": "Không thể đọc mã vạch.",
+    "actions": {
+      "close": "Đóng máy ảnh",
+      "flip": "Đổi camera",
+      "capture": "Chụp ảnh",
+      "toggleFlash": "Bật hoặc tắt đèn flash"
+    }
   },
   "notFound": {
     "title": "Không tìm thấy",

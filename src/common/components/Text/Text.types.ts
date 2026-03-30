@@ -25,7 +25,9 @@ export type TextColor =
   | 'muted'
   | 'inverse'
   | 'accent'
-  | 'link';
+  | 'link'
+  | 'linkHover'
+  | 'onBrand';
 
 /** Props for the {@link Text} component. */
 export interface TextProps extends RNTextProps {

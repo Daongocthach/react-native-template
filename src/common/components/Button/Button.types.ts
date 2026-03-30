@@ -1,4 +1,4 @@
-import type { PressableProps } from 'react-native';
+import type { PressableProps, StyleProp, TextStyle } from 'react-native';
 
 /** Visual style variant for the Button component. */
 export type ButtonVariant = 'primary' | 'secondary' | 'outline' | 'ghost';
@@ -24,4 +24,6 @@ export interface ButtonProps extends Omit<PressableProps, 'children'> {
   leftIcon?: React.ReactNode;
   /** Icon element rendered after the title. */
   rightIcon?: React.ReactNode;
+  /** Optional style override for the label text. */
+  labelStyle?: StyleProp<TextStyle>;
 }

@@ -62,12 +62,18 @@ export { Divider } from './Divider';
 export type { DividerProps } from './Divider';
 export { ScreenContainer } from './ScreenContainer';
 export type { ScreenContainerProps } from './ScreenContainer';
+export { TabsHeader } from './TabsHeader';
+export type { TabsHeaderProps } from './TabsHeader';
 
 // Overlay
 export { Dialog } from './Dialog';
 export type { DialogProps, DialogAction } from './Dialog';
+export { DateTimeField } from './DateTimeField';
+export type { DateTimeFieldMode, DateTimeFieldProps } from './DateTimeField';
 export { Menu } from './Menu';
 export type { MenuProps, MenuItem } from './Menu';
+export { MonthSelector } from './MonthSelector';
+export type { MonthSelectorProps } from './MonthSelector';
 
 // Typography
 export { Icon } from './Icon';

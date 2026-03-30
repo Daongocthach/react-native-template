@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Pressable, View, type LayoutChangeEvent } from 'react-native';
 import Animated, {
   cancelAnimation,
@@ -50,6 +50,12 @@ export function SegmentedControl({
 
   const segmentWidth = containerWidth > 0 ? containerWidth / options.length : 0;
 
+  useEffect(() => {
+    const nextIndex = selectedIndex >= 0 ? selectedIndex : 0;
+    cancelAnimation(indicatorPosition);
+    indicatorPosition.value = withTiming(nextIndex, { duration: 200 });
+  }, [indicatorPosition, selectedIndex]);
+
   const indicatorStyle = useAnimatedStyle(() => ({
     transform: [{ translateX: indicatorPosition.value * segmentWidth }],
     width: segmentWidth,
@@ -73,7 +79,7 @@ export function SegmentedControl({
             isSelected={isSelected}
             disabled={disabled}
             indicatorPosition={indicatorPosition}
-            inverseColor={theme.colors.text.inverse}
+            inverseColor={theme.colors.text.primary}
             secondaryColor={theme.colors.text.secondary}
             onPress={() => handleSelect(option.value, index)}
           />

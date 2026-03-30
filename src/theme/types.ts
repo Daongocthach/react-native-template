@@ -4,6 +4,7 @@ export interface BrandColors {
   tertiary: string;
   primaryVariant: string;
   secondaryVariant: string;
+  onBrand: string;
 }
 
 export interface BackgroundColors {
@@ -26,6 +27,7 @@ export interface TextColors {
   accent: string;
   link: string;
   linkHover: string;
+  onBrand: string;
 }
 
 export interface BorderColors {
@@ -43,6 +45,7 @@ export interface IconColors {
   muted: string;
   inverse: string;
   accent: string;
+  onBrand: string;
 }
 
 export interface StateColors {
@@ -71,6 +74,8 @@ export interface GradientColors {
   secondary: [string, string];
   accent: [string, string];
   success: [string, string];
+  error: [string, string];
+  warning: [string, string];
   highlight: [string, string];
 }
 

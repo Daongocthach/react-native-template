@@ -30,21 +30,21 @@ This template ships with the parts most projects end up rebuilding anyway:
 
 ## Tech stack
 
-| Layer | Technology |
-| --- | --- |
-| Framework | React Native 0.83.2 + Expo SDK 55 |
-| Routing | `expo-router` |
-| Language | TypeScript 5.9 (strict mode) |
-| Styling | `react-native-unistyles` 3.x |
-| Server state | `@tanstack/react-query` |
-| Client state | Zustand |
-| Backend | Supabase |
-| Networking | Axios |
-| i18n | `react-i18next` |
-| Storage | `react-native-mmkv` |
-| Forms | `react-hook-form` + `zod/v4` |
-| Testing | Jest + `jest-expo` |
-| Quality | ESLint 9 + Prettier + Husky |
+| Layer        | Technology                        |
+| ------------ | --------------------------------- |
+| Framework    | React Native 0.83.2 + Expo SDK 55 |
+| Routing      | `expo-router`                     |
+| Language     | TypeScript 5.9 (strict mode)      |
+| Styling      | `react-native-unistyles` 3.x      |
+| Server state | `@tanstack/react-query`           |
+| Client state | Zustand                           |
+| Backend      | Supabase                          |
+| Networking   | Axios                             |
+| i18n         | `react-i18next`                   |
+| Storage      | `react-native-mmkv`               |
+| Forms        | `react-hook-form` + `zod/v4`      |
+| Testing      | Jest + `jest-expo`                |
+| Quality      | ESLint 9 + Prettier + Husky       |
 
 ## Included out of the box
 

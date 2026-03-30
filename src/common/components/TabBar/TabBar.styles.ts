@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native-unistyles';
+import { hs, vs } from '@/theme/metrics';
 
 export const styles = StyleSheet.create((theme) => ({
   container: {
@@ -8,42 +9,69 @@ export const styles = StyleSheet.create((theme) => ({
     right: theme.metrics.spacing.p24,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     backgroundColor: theme.colors.background.surface,
     borderRadius: theme.metrics.borderRadius.full,
     borderWidth: 1,
     borderColor: theme.colors.border.subtle,
-    paddingVertical: theme.metrics.spacingV.p8,
-    paddingHorizontal: theme.metrics.spacing.p8,
+    paddingVertical: vs(12),
+    paddingHorizontal: hs(12),
     shadowColor: theme.colors.shadow.color,
-    shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.15,
-    shadowRadius: 12,
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.16,
+    shadowRadius: 18,
     elevation: theme.colors.shadow.elevationMedium,
-  },
-  indicator: {
-    position: 'absolute',
-    top: theme.metrics.spacingV.p4,
-    bottom: theme.metrics.spacingV.p4,
-    borderRadius: theme.metrics.borderRadius.full,
   },
   tab: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingVertical: theme.metrics.spacingV.p8,
+    paddingVertical: vs(8),
     borderRadius: theme.metrics.borderRadius.full,
-    gap: theme.metrics.spacingV.p4,
     zIndex: 1,
   },
-  label: {
-    fontSize: theme.metrics.fontSize.xxs,
-    fontWeight: '600',
+  standardTab: {
+    maxWidth: '22%',
   },
-  labelActive: {
-    color: theme.colors.text.inverse,
+  addTab: {
+    flex: 0,
+    marginTop: -vs(34),
+    paddingHorizontal: theme.metrics.spacing.p8,
   },
-  labelInactive: {
-    color: theme.colors.icon.tertiary,
+  tabBubble: {
+    width: theme.metrics.spacing.p44,
+    height: theme.metrics.spacing.p44,
+    borderRadius: theme.metrics.borderRadius.full,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  tabBubbleActive: {
+    backgroundColor: theme.colors.brand.primaryVariant,
+    borderWidth: 1,
+    borderColor: theme.colors.brand.primary,
+  },
+  tabBubbleInactive: {
+    backgroundColor: 'transparent',
+  },
+  addBubble: {
+    width: theme.metrics.spacing.p64,
+    height: theme.metrics.spacing.p64,
+    borderRadius: theme.metrics.borderRadius.full,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderWidth: 6,
+    borderColor: theme.colors.background.app,
+    shadowColor: theme.colors.shadow.color,
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.26,
+    shadowRadius: 20,
+    elevation: theme.colors.shadow.elevationLarge,
+  },
+  addBubbleGradient: {
+    width: '100%',
+    height: '100%',
+    borderRadius: theme.metrics.borderRadius.full,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 }));

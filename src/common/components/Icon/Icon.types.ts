@@ -2,7 +2,14 @@ import type Ionicons from '@expo/vector-icons/Ionicons';
 import type { ComponentProps } from 'react';
 
 /** Semantic color variant for the Icon, mapped to theme icon tokens. */
-export type IconVariant = 'primary' | 'secondary' | 'tertiary' | 'muted' | 'inverse' | 'accent';
+export type IconVariant =
+  | 'primary'
+  | 'secondary'
+  | 'tertiary'
+  | 'muted'
+  | 'inverse'
+  | 'accent'
+  | 'onBrand';
 
 /** Named size variant for the Icon, mapped to theme metric values. */
 export type IconSizeVariant = 'xs' | 'sm' | 'md' | 'lg' | 'xl';

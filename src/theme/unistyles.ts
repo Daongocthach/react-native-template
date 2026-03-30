@@ -1,4 +1,3 @@
-import { Appearance } from 'react-native';
 import { StyleSheet } from 'react-native-unistyles';
 import { getItem, STORAGE_KEYS } from '../utils/storage';
 import { buildAllThemes, compositeThemeName, THEME_PRESET_NAMES } from './config';
@@ -20,9 +19,13 @@ function getInitialThemeName(): CompositeThemeName {
     preset = presetResult.data as ThemePresetName;
   }
 
-  let mode: 'light' | 'dark' = Appearance.getColorScheme() === 'dark' ? 'dark' : 'light';
+  let mode: 'light' | 'dark' = 'light';
   if (modeResult.success && modeResult.data) {
-    mode = modeResult.data === 'dark' ? 'dark' : 'light';
+    if (modeResult.data === 'system') {
+      mode = 'light';
+    } else {
+      mode = modeResult.data === 'dark' ? 'dark' : 'light';
+    }
   }
 
   return compositeThemeName(preset, mode);
