@@ -10,22 +10,25 @@ const config: ExpoConfig = {
   userInterfaceStyle: 'automatic',
   ios: {
     supportsTablet: true,
+    icon: {
+      light: './assets/ios-icon.png',
+      dark: './assets/ios-icon.png',
+    },
     bundleIdentifier: 'com.gempixel.reactnativetemplate',
     infoPlist: {
-      CFBundleDisplayName: 'React Native Template',
       CFBundleAllowMixedLocalizations: true,
-      CFBundleLocalizations: ['en', 'vi'],
+      CFBundleLocalizations: ['en', 'vi', 'zh-TW', 'zh-CN'],
       ITSAppUsesNonExemptEncryption: false,
     },
+
     buildNumber: '1',
   },
   android: {
     versionCode: 1,
+    softwareKeyboardLayoutMode: 'resize',
     adaptiveIcon: {
-      foregroundImage: './assets/android-icon-foreground.png',
-      backgroundImage: './assets/android-icon-background.png',
-      monochromeImage: './assets/android-icon-monochrome.png',
-      backgroundColor: '#0F172A',
+      foregroundImage: './assets/adaptive-icon.png',
+      backgroundColor: '#ffffff',
     },
     package: 'com.gempixel.reactnativetemplate',
   },
